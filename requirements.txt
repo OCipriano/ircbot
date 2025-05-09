@@ -1,0 +1,4 @@
+irc
+requests
+python-dotenv
+certifi

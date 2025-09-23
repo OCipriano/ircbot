@@ -41,7 +41,7 @@ projeto/
     ├── .env                   # Variáveis de ambiente (ignorado pelo Git)
     ├── plugins/               # Diretório de plugins
         ├── admin.py           # Comandos administrativos
-        ├── commands.py        # Gestião de comandos gerais
+        ├── commands.py        # Gestão de comandos gerais
         ├── crypto.py          # Informações sobre criptomoedas
         ├── misc.py            # Funcionalidades diversas
         ├── seen.py            # Rastreio de atividade de utilizadores

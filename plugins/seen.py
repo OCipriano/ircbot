@@ -1,7 +1,21 @@
+# ================================================================================ #
+#                                                                                  #
+# Ficheiro:      seen.py                                                           #
+# Autor:         NunchuckCoder                                                     #
+# Versão:        1.0                                                               #
+# Data:          Julho 2025                                                        #
+# Descrição:     Módulo responsável por registar e consultar a última vez que      #
+#                um utilizador foi visto no IRC. Usa uma base de dados SQLite      #
+#                simples para armazenamento persistente.                           #
+# Licença:       MIT License                                                       #
+#                                                                                  #
+# ================================================================================ #
+
 import os
 import sqlite3
 from datetime import datetime
 
+# Caminho para a base de dados SQLite
 DB_PATH = "db/seen.db"
 
 def init_db():

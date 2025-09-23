@@ -1,6 +1,6 @@
 # ================================================================================ #
 #                                                                                  #
-# Ficheiro:      config.py                                                         #
+# Ficheiro:      logger.py                                                         #
 # Autor:         NunchuckCoder                                                     #
 # Versão:        1.0                                                               #
 # Data:          Julho 2025                                                        #
@@ -54,3 +54,4 @@ console_handler.setFormatter(file_format)
 # Adiciona os dois manipuladores (ficheiro + consola) ao logger principal
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
+

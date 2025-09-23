@@ -1,3 +1,17 @@
+# ================================================================================ #
+#                                                                                  #
+# Ficheiro:      commands.py                                                       #
+# Autor:         NunchuckCoder                                                     #
+# Versão:        1.0                                                               #
+# Data:          Julho 2025                                                        #
+# Descrição:     Implementação e gestão dos comandos do bot IRC. Inclui comandos   #
+#                administrativos (op, deop, kick, ban, etc.) e comandos gerais     #
+#                (!seen, !crypto, !ajuda). Faz a ligação com outros módulos como   #
+#                admin.py, seen.py e crypto.py.                                    #
+# Licença:       MIT License                                                       #
+#                                                                                  #
+# ================================================================================ #
+
 from plugins.admin import is_admin  # Verifica se um utilizador tem permissões de administrador
 from plugins import seen  # Plugin que regista e consulta a última vez que um utilizador foi visto
 from plugins.crypto import get_crypto_price  # Função para obter o preço de criptomoedas
@@ -120,8 +134,8 @@ async def executar_comando(bot, source, comando, args, target):
         case '!ajuda':
             ajuda = [
                 ("🤖 Comandos disponíveis:",""),
-                ("!op <nick>", "Dá op a um utilizador (admin apenas)."),
-                ("!deop <nick>", "Remove op de um utilizador (admin apenas)."),
+                ("!op [nick]", "Dá op a um utilizador (admin apenas)."),
+                ("!deop [nick]", "Remove op de um utilizador (admin apenas)."),
                 ("!voice <nick>", "Dá voz a um utilizador (admin apenas)."),
                 ("!devoice <nick>", "Remove a voz de um utilizador (admin apenas)."),
                 ("!kick <nick> <motivo>", "Expulsa um utilizador com motivo (admin apenas)."),
@@ -130,7 +144,7 @@ async def executar_comando(bot, source, comando, args, target):
                 ("!unban <nick>", "Remove um ban (admin apenas)."),
                 ("!invite <nick>", "Envia um convite para o canal (admin apenas)."),
                 ("!topic <novo tópico>", "Altera o tópico do canal (admin apenas)."),
-                ("!status <nick>", "Mostra se o nick é admin ou não."),
+                ("!status [nick]", "Mostra se o nick é admin ou não."),
                 ("!seen <nick>", "Informa a última vez que o nick foi visto."),
                 ("!crypto <símbolo>", "Mostra o preço atual de uma criptomoeda.")
             ]

@@ -1,6 +1,19 @@
-### 🤖 IRC Bot com Integração Telegram e Plugins
+<h1 align="center">IRC Bot com Integração Telegram e Plugins</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
+  <img src="https://img.shields.io/badge/JSON-000?style=for-the-badge&logo=json&logoColor=fff" />
+  <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+  <img src="https://img.shields.io/badge/Notepad++-90E59A.svg?style=for-the-badge&logo=notepad%2b%2b&logoColor=black" />
+  <img src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" />
+  <img src="https://img.shields.io/badge/status-active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" />
+</p>
+<p align="center">
+Este projeto é um bot IRC modular com funcionalidades extensíveis através de plugins, integração com o Telegram e suporte a comandos, logging e gestão de estado de utilizadores.
+</p>
 
-	Este projeto é um bot IRC modular com funcionalidades extensíveis através de plugins, integração com o Telegram e suporte a comandos, logging e gestão de estado de utilizadores.
+---
 
 ### 🔧 Funcionalidades Principais
 
